@@ -24,15 +24,15 @@
         </Grid.ColumnDefinitions>
 
 
-        <Border Grid.Row="0" Grid.ColumnSpan="3" Style="{StaticResource ResultBorderStyle}">
-            <TextBlock Name="ResultsBlock" Style="{StaticResource ResultTextBoxStyle}"></TextBlock>
+        <Border Name="ResultsContainer" Grid.Row="0" Grid.ColumnSpan="3" Style="{StaticResource ResultBorderStyle}">
+            <TextBlock Name="ResultsBlock" Style="{StaticResource ResultTextBoxStyle}">0</TextBlock>
         </Border>
-        <Grid Grid.Row="0" Grid.Column="3">
+        <Grid Name="OperationBlockContainer" Grid.Row="0" Grid.Column="3" Background="{StaticResource SystemControlDisabledListMediumBrush}">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="4*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Name="OperationBlock" Style="{StaticResource ResultTextBoxStyle}">+3433</TextBlock>
+            <TextBlock Name="OperationBlock" Style="{StaticResource ResultTextBoxStyle}" Foreground="{StaticResource InkToolbarAccentColorThemeBrush}"></TextBlock>
         </Grid>
         
         <Button Content="1" Click="Btn_Clicked" Grid.Row="1" Grid.Column="0" Style="{StaticResource ButtonNumpadCalculator}"></Button>
@@ -47,7 +47,7 @@
         <Button Content="8" Click="Btn_Clicked" Grid.Row="3" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
         <Button Content="9" Click="Btn_Clicked" Grid.Row="3" Grid.Column="2" Style="{StaticResource ButtonNumpadCalculator}"></Button>
         <Button Content="x" Click="Btn_Clicked" Grid.Row="3" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
-        <Button Content="C" Click="Btn_Clicked" Grid.Row="4" Grid.Column="0" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="C" Click="ClearBtn_Clicked" Grid.Row="4" Grid.Column="0" Style="{StaticResource ButtonControllerCalculator}"></Button>
         <Button Content="0" Click="Btn_Clicked" Grid.Row="4" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
         <Button Content="=" Click="Btn_Clicked" Grid.Row="4" Grid.Column="2" Style="{StaticResource ButtonCalculatorStyle}"></Button>
         <Button Content="/" Click="Btn_Clicked" Grid.Row="4" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
