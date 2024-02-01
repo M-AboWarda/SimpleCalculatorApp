@@ -7,8 +7,51 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Border Grid.Row="0" Grid.ColumnSpan="3" Style="{StaticResource ResultBorderStyle}">
+            <TextBlock Name="ResultsBlock" Style="{StaticResource ResultTextBoxStyle}"></TextBlock>
+        </Border>
+        <Grid Grid.Row="0" Grid.Column="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Name="OperationBlock" Style="{StaticResource ResultTextBoxStyle}">+3433</TextBlock>
+        </Grid>
+        
+        <Button Content="1" Click="Btn_Clicked" Grid.Row="1" Grid.Column="0" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="2" Click="Btn_Clicked" Grid.Row="1" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="3" Click="Btn_Clicked" Grid.Row="1" Grid.Column="2" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="+" Click="Btn_Clicked" Grid.Row="1" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
+        <Button Content="4" Click="Btn_Clicked" Grid.Row="2" Grid.Column="0" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="5" Click="Btn_Clicked" Grid.Row="2" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="6" Click="Btn_Clicked" Grid.Row="2" Grid.Column="2" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="-" Click="Btn_Clicked" Grid.Row="2" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
+        <Button Content="7" Click="Btn_Clicked" Grid.Row="3" Grid.Column="0" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="8" Click="Btn_Clicked" Grid.Row="3" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="9" Click="Btn_Clicked" Grid.Row="3" Grid.Column="2" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="x" Click="Btn_Clicked" Grid.Row="3" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
+        <Button Content="C" Click="Btn_Clicked" Grid.Row="4" Grid.Column="0" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="0" Click="Btn_Clicked" Grid.Row="4" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
+        <Button Content="=" Click="Btn_Clicked" Grid.Row="4" Grid.Column="2" Style="{StaticResource ButtonCalculatorStyle}"></Button>
+        <Button Content="/" Click="Btn_Clicked" Grid.Row="4" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
+
 
     </Grid>
 </Page>

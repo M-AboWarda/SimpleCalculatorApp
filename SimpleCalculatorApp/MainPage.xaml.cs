@@ -26,5 +26,10 @@ namespace SimpleCalculatorApp
         {
             this.InitializeComponent();
         }
+
+        private void Btn_Clicked(object sender, RoutedEventArgs e)
+        {
+            ResultsBlock.Text += (sender as Button).Content;
+        }
     }
 }
