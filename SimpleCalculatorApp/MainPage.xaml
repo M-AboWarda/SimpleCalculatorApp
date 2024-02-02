@@ -49,7 +49,7 @@
         <Button Content="x" Click="Btn_Clicked" Grid.Row="3" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
         <Button Content="C" Click="ClearBtn_Clicked" Grid.Row="4" Grid.Column="0" Style="{StaticResource ButtonControllerCalculator}"></Button>
         <Button Content="0" Click="Btn_Clicked" Grid.Row="4" Grid.Column="1" Style="{StaticResource ButtonNumpadCalculator}"></Button>
-        <Button Content="=" Click="Btn_Clicked" Grid.Row="4" Grid.Column="2" Style="{StaticResource ButtonCalculatorStyle}"></Button>
+        <Button Name="CalculateBtn" Content="=" Click="Btn_Clicked" Grid.Row="4" Grid.Column="2" Style="{StaticResource ButtonCalculatorStyle}"></Button>
         <Button Content="/" Click="Btn_Clicked" Grid.Row="4" Grid.Column="4" Style="{StaticResource ButtonControllerCalculator}"></Button>
 
 
